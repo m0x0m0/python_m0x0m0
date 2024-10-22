@@ -1,0 +1,5 @@
+n = int(input())
+list1 = list(map(int, (input()).split()))
+k = int(input())
+print(*list1[-k:], end=' ')
+print(*list1[0:-k])
