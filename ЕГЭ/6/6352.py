@@ -2,22 +2,22 @@
 tracer(0)
 left(90)
 k = 30
-x = 4
+s = 4
 for _ in range(2):
-    fd(3*x * k)
+    fd(3*s * k)
     right(90)
-    fd(x * k)
+    fd(s * k)
     right(90)
     for j in range(2):
-        fd(x * k)
+        fd(s * k)
         left(90)
     for i in range(2):
-        fd(x * k)
+        fd(s * k)
         right(90)
 pu()
-for x in range(-k, k):
+for s in range(-k, k):
     for y in range(-k, k):
-        goto(x * k, y * k)
+        goto(s * k, y * k)
         dot(5)
 done()'''
 
